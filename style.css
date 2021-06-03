@@ -1,42 +1,92 @@
 *{
+    font-family: 'Poppins, sans-serif';
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0;
-    font-family: 'Open Sans', Verdana, sans-serif;
 }
+
+
+
+/* HEADER */
 
 header{
+    position: absolute;
     width: 100%;
-    height: 20vh;
-    background-color: #44ad7a;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    display: flex;
+    background-color: #3a4352;
+    align-items: center;
+    padding: 15px 100px;
 }
 
-.logosite{
-    float: left;
-    margin: 30px 30px;
-    width: 200px;
-    height: 68px;
-    background-image: url(../imagens/Logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+
+
+header .logo{
+    font-family: 'Poppins', Verdana, sans-serif;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
     
 }
 
-ul{
-    float: right;
-    margin: 20px;
+header .navigation{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
 }
 
-ul li{
-    display: inline-block;
-    margin-top: 40px;
-    padding: 0 60px;
+header .navigation li{
+    list-style-type: none;
+    margin: 0 10px;
 }
 
-ul li a{
-    text-decoration: none;
-    font-size: 20px;
+header .navigation li a{
     color: white;
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px ;
+    font-family: 'Poppins';
+}
+
+header .navigation li a:hover{
+    color: #6d99e3;
+}
+
+header .search{
+    width: 300px;
+    position: relative;
+    height: 40px;
+}
+
+header .search input[type=text]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 0 10px 0 45px;
+}
+
+header .search input[type=text]::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+header .search .fa-search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: white;
 }
