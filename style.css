@@ -42,7 +42,7 @@ header .navigation{
 
 header .navigation li{
     list-style-type: none;
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
 header .navigation li a{
@@ -52,10 +52,14 @@ header .navigation li a{
     font-size: 16px;
     letter-spacing: 1px ;
     font-family: 'Poppins';
+    padding:10px;
+    transition: 0.5s;
 }
 
 header .navigation li a:hover{
-    color: #6d99e3;
+    color: #00e1ff;
+    border:1px solid rgba(25, 214, 214, 0.7);
+    border-radius: 20px;
 }
 
 header .search{
@@ -76,11 +80,19 @@ header .search input[type=text]{
     border: 1px solid white;
     border-radius: 8px;
     padding: 0 10px 0 45px;
+    font-family: 'Poppins';
+    transition: 0.5s;
+}
+
+
+header .search input[type=text]:focus{
+    border: 1px solid #00e1ff;
 }
 
 header .search input[type=text]::placeholder{
     color: white;
     font-size: 15px;
+    font-family: 'Poppins';
 }
 
 header .search .fa-search{
@@ -89,4 +101,6 @@ header .search .fa-search{
     transform: translateY(-50%);
     left: 10px;
     color: white;
+    border-right: 1px solid white;
+    padding-right: 12px;
 }
