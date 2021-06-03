@@ -114,3 +114,18 @@ header .search .fa-search{
     border-right: 1px solid white;
     padding-right: 12px;
 }
+
+
+@media screen and (max-width: 991px){
+    header{
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+
+
+    header .navigation li a:hover{
+        color: #00c5df;
+        border: none;
+    }
+
+}
