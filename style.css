@@ -1,1 +1,164 @@
-REFAZER
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    background-color: #282d2e;
+    padding:15px 100px;
+}
+
+header img{
+    height: 64px;
+    width: 64px;
+}
+
+header .logo{
+    font-family: 'Poppins', Verdana, sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    left: -10%;
+    display: block;
+
+}
+
+header .logo:hover{
+    color:#3d7c80;
+}
+
+
+header .navigation{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+header .navigation li{
+    margin: 0 10px;
+    list-style: none;
+}
+
+header .navigation li:hover{
+    border-bottom: 1px solid white;
+    padding: 0 10px;
+    transition: 0.5s;
+}
+
+header a{
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+.searchbar{
+    position: relative;
+    width: 200px;
+    height: 40px;
+}
+
+.searchbar input[type=text]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: 1px solid #3d7c80;
+    border-radius: 20px;
+    padding: 0 10px 0 45px ;
+}
+
+.searchbar input::placeholder{
+    color: white;
+}
+
+.searchbar .fa-search{
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+    left: 10px;
+    color: white;
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+.searchbar input:focus{
+    border: 1px solid white;
+    transition: 1s;
+}
+
+.searchbarmobile input:focus{
+    border: 1px solid white;
+    transition: 1s;
+}
+
+.searchbarmobile{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    display: none;
+}
+
+.searchbarmobile input[type=text]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0 10px 0 45px ;
+}
+
+.searchbarmobile .fa-search{
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+    left: 10px;
+    color: white;
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+
+
+
+/* ====================== responsivo ======================*/
+@media screen and (max-width: 1200px){
+    header .logo{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 530px){
+   
+    .searchbar{
+        display: none;
+    }
+
+    .searchbarmobile{
+        display: block;
+    }
+}
