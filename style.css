@@ -169,6 +169,7 @@ section h2{
     position: relative;
     color: white;
     font-size: 6em;
+    padding: 0 2%;
 }
 
 
@@ -179,8 +180,22 @@ section h2{
         display: none;
     }
 
+  
 }
 
+@media screen and (max-width: 1000px){
+    section h2{
+        right: -10%;
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 990px){
+    section h2{
+        right: -10%;
+        padding: 0 5%;
+    }
+}
 
 @media screen and (max-width: 530px){
    
@@ -197,4 +212,10 @@ section h2{
     .searchbarmobile{
         display: block;
     }
+
+    section h2{
+        right: -20%;
+        top: 8%;
+    }
+
 }
